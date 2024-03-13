@@ -1,5 +1,8 @@
 // Importamos de mongoose
 const { Schema, model } = require('mongoose');
+//importamos mongoose
+const mongoose = require('mongoose');
+
 
 const MediaSchema = Schema({
     
@@ -10,7 +13,7 @@ url:{ type: String, required: true, unique:true },
 imagen:{ type: String, required: true },
 fechaCreacion: { type: Date, required: true },
 fechaActualizacion: { type: Date, required: true },
-añoEstreno:{ type: Number, required: true },
+anoEstreno:{ type: Number, required: true },
 
 //Utilizamos un tipo de conexión de Obejeto
 
