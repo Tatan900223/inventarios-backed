@@ -73,7 +73,7 @@ router.put('/:generoId', [
         // Validación de Genero Pelicula que se esté creando, no esté creado
         let genero = await Genero.findById(req.params.generoId);
         if(!genero){
-            return res.status(400).send('usuario no existe');
+            return res.status(400).send('Pelicula no existe');
         }
 
         //Validación Genero ya existe

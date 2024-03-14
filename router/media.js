@@ -43,7 +43,7 @@ router.post('/', [
             media.titulo = req.body.titulo;
             media.sinopsis = req.body.sinopsis;
             media.url = req.body.url;
-            media.imagen = req.body.imagemn;
+            media.imagen = req.body.imagen;
             media.fechaCreacion = new Date();
             media.fechaActualizacion = new Date();
             media.anoEstreno = req.body.anoEstreno;

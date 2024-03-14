@@ -67,7 +67,7 @@ router.put('/:directorId', [
             return res.status(400).json({ mensaje: errors.array });
         }
 
-        // Validación director ya existe
+        // Validación director no existe
         let director = await Director.findById(req.params.directorId);
         if (!director) {
             return res.status(400).send('Director no existe');
