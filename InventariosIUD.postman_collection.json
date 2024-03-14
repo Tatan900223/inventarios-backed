@@ -222,6 +222,24 @@
 				"url": "http://localhost:3000/tipo/65f06fb138f360e7c99934d1"
 			},
 			"response": []
+		},
+		{
+			"name": "CrearMedia",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serial\": \"MJK01\",\r\n    \"titulo\": \"50 Pasos para triunfar\",\r\n    \"sinopsis\": \"xxxxxxxxxxxxxxxxx & xxxxxxx\",\r\n    \"url\": \"https://wwm.cinecalidad.gg/ver-serie/supersex/\",\r\n    \"imagen\":\"https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F3p4RNksLwGkws3DGWNlClpalSWe.jpg&w=256&q=75\",\r\n    \"fechaCreacion\": \"2022-12-02\",\r\n    \"fechaActualizacion\": \"2023-10-09\",\r\n    \"anoEstreno\": \"2023\",\r\n    \"generoPrincipal\": {\"_id\": \"65ee5a3cd2f402e5cc2dca5d\"},\r\n    \"directorPrincipal\": {\"_id\": \"65f0f85dbc5d67f5f3f34c98\"},\r\n    \"productoraPrincipal\": {\"_id\": \"65f047ad77e4e81e29e4d1c0\"},\r\n    \"tipoPrincipal\": {\"_id\": \"65f06fb138f360e7c99934d1\"}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/media"
+			},
+			"response": []
 		}
 	],
 	"event": [
