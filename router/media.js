@@ -62,4 +62,19 @@ router.post('/', [
 
 });
 
+// Metodo Get Listar Media
+router.get('/', async function (req, res) {
+
+    try {
+
+        const medias = await Media.find();
+        res.send(medias);
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).send('Ocurrió un Error');
+    }
+});
+
+
 module.exports = router;
